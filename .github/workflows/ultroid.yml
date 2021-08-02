@@ -1,6 +1,6 @@
-#Docker Work na BSDK
+#sedloif
 
-name: Ultroid Workflow
+name: fukoff Workflow
 
 on:
     push:
@@ -29,8 +29,9 @@ jobs:
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone https://${{ secrets.GitHubName }}:${{ secrets.GH_TOKEN }}@${{ secrets.CREDS }} ultroid
-       - name: Running Ultroid
+           git clone https://${{ secrets.GitHubName }}:${{ secrets.GH_TOKEN }}@${{ secrets.CREDS }} fukoff
+       - name: Running fukoff
+
          timeout-minutes: 350
          continue-on-error: true
          run: |
